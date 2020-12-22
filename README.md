@@ -5,8 +5,7 @@
 time is configurable, but is not recommended to be more frequent than once a day.  
 This for example will execute at the 23:00 hour of the day
 
-Data is returned from the folding@home API and stored into a database.  The API
-documentation can be found at https://stats.foldingathome.org/api
+The Folding@Home API documentation can be found at https://stats.foldingathome.org/api
 
 # dB Schema
 The database needs to be created in a schema with the following data types
