@@ -10,7 +10,7 @@ The Folding@Home API documentation can be found at https://stats.foldingathome.o
 # dB Schema
 The database needs to be created in a schema with the following data types
 ```
-CREATE TABLE `ilwm70lty119hzkm`.`fah_stats` (
+CREATE TABLE `fah_stats` (
   `idfah_stats` INT NOT NULL AUTO_INCREMENT,
   `date` DATE NOT NULL,
   `teamRank` INT NOT NULL,
