@@ -69,6 +69,6 @@ function getTeamStats(teamID) {
 
 /////////////// CRON JOB TO POST UPDATES TO DB ///////////
 /////////////// UPDATES OCCUR ONCE EVERY DAY @ 23:00  ////
-cron.schedule("23 * * * * *", function() {
+cron.schedule("23 * * *", function() {
     getTeamStats(team);
 });
