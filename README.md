@@ -12,7 +12,7 @@ The database needs to be created in a schema with the following data types
 ```
 CREATE TABLE `fah_stats` (
   `idfah_stats` INT NOT NULL AUTO_INCREMENT,
-  `date` DATE NOT NULL,
+  `date` TIMESTAMP NOT NULL,
   `teamRank` INT NOT NULL,
   `total_teams_comp` INT NOT NULL,
   `teamRankPercent` FLOAT NOT NULL,
