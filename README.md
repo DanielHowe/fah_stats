@@ -1,15 +1,17 @@
 # Project Overview
-Folding@home is a status daemon for recording team stats to a mySQL database.  The update 
-time is configurable, but not recommended to be more frequent than once a day (1440 minutes)
+**Folding@home** is a crowd source computing project.  Get started 'folding' by contributing to research at home, by setting up an account and joining a team.  For more information, go to https://foldingathome.org/
 
-Data is returned from the folding@home API and stored into a database.  The API
-documentation can be found at https://stats.foldingathome.org/api
+**fah_stats** is a node.js CRON daemon for logging team stats to a mySQL database.  The update 
+time is configurable, but is not recommended to be more frequent than once a day.  
+This for example will execute at the 23:00 hour of the day
+
+The Folding@Home API documentation can be found at https://stats.foldingathome.org/api
 
 # dB Schema
 The database needs to be created in a schema with the following data types
 ```
-CREATE TABLE `ilwm70lty119hzkm`.`fah_stats` (
-  `idfah_stats` INT NOT NULL,
+CREATE TABLE `fah_stats` (
+  `idfah_stats` INT NOT NULL AUTO_INCREMENT,
   `date` DATE NOT NULL,
   `teamRank` INT NOT NULL,
   `total_teams_comp` INT NOT NULL,
